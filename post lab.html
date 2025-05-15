@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lakmé Beauty</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      }
+
+      .navbar {
+        background: rgb(11, 3, 27);
+      }
+
+      .header-title {
+        text-align: center;
+        font-family: "Georgia", serif;
+        color: #cc0066;
+        margin-top: 20px;
+      }
+
+      .text {
+        text-align: center;
+      }
+
+      .text h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .custom-card {
+        transition: transform 0.3s ease;
+      }
+
+      .btn-pink {
+        background-color: #cc0066;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .btn-pink:hover {
+        background-color: #ff3399;
+      }
+
+      .custom-card:hover {
+        transform: scale(1.05);
+      }
+
+      .footer {
+        background-color: rgb(11, 3, 27);
+      }
+
+      .footer-link {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        color: #ff69b4;
+        text-decoration: underline;
+      }
+
+      .btn-view-more {
+        background-color: #0e0331;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 8px rgba(204, 0, 102, 0.3);
+      }
+
+      .btn-view-more:hover {
+        background-color: #ff3399;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="#">LAKMÉ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <h1 class="header-title">Welcome to Lakmé Beauty World</h1>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExample"
+      class="carousel slide m-4"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="slider1.jpg"
+            class="d-block w-100"
+            height="400"
+            alt="Beauty 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="slider2.jpg"
+            class="d-block w-100"
+            height="400"
+            alt="Beauty 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="slider3.jpg"
+            class="d-block w-100"
+            height="400"
+            alt="Beauty 3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container my-4">
+      <p>
+        <b>Lakmé</b> is India’s leading cosmetics brand.
+        <i>Empowering beauty</i> with science and style.
+      </p>
+      <ul>
+        <li>High-quality skincare</li>
+        <li>Bold & beautiful makeup</li>
+        <li>Trendy products</li>
+      </ul>
+    </div>
+
+    <!-- Products Table -->
+    <div class="container mb-4">
+      <h3 class="text-center">Our Best Sellers</h3>
+      <table class="table table-bordered mt-3">
+        <thead class="table-dark">
+          <tr>
+            <th rowspan="2">Product</th>
+            <th colspan="2">Details</th>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lakmé Lip Love</td>
+            <td>₹199</td>
+            <td>Makeup</td>
+          </tr>
+          <tr>
+            <td>Lakmé Sunscreen</td>
+            <td>₹299</td>
+            <td>Skincare</td>
+          </tr>
+          <tr>
+            <td>Lakmé Salon Treatments</td>
+            <td>₹499</td>
+            <td>Hair</td>
+          </tr>
+          <tr>
+            <td>Lakmé Foundation</td>
+            <td>₹999</td>
+            <td>Face</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text">
+      <div>
+        <h3>────────────── TRENDING NOW ─────────────</h3>
+        <p>Your favourite Lakme makeup and skin care</p>
+      </div>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container my-5" id="products">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHDP7VTmVVo3lwmrdjVIl5GVp1vfQF0_-UA&s"
+              class="card-img-top"
+              alt="Lakmé Lipstick"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lakmé Lipstick</h5>
+              <p class="card-text">Long-lasting matte finish for bold lips.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="eyeliner.jpg" class="card-img-top" alt="Lakmé Eyeliner" />
+            <div class="card-body">
+              <h5 class="card-title">Eyeliner</h5>
+              <p class="card-text">Long-lasting matte finish eyeliner.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img
+              src="foundation.jpg"
+              class="card-img-top"
+              alt="Lakmé Foundation"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lakmé Foundation</h5>
+              <p class="card-text">Smooth coverage for a flawless look.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text">
+      <div>
+        <h3>────────────── TRY NOW ─────────────</h3>
+        <p>Try before buying products</p>
+      </div>
+    </div>
+
+    <!-- Try Now Cards -->
+    <div class="container my-5" id="products">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="lakmelipstick.jpg" class="card-img-top" alt="Lakmé Lipstick" />
+            <div class="card-body">
+              <button class="btn btn-pink w-100">Try Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="lakmeeyeliner.jpg" class="card-img-top" alt="Lakmé Eyeliner" />
+            <div class="card-body">
+              <button class="btn btn-pink w-100">Try Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="lakmefoundation.jpg" class="card-img-top" alt="Lakmé Foundation" />
+            <div class="card-body">
+              <button class="btn btn-pink w-100">Try Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center my-4">
+      <button class="btn btn-view-more">View More</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container py-4">
+        <div class="row text-white">
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Lakmé Beauty</h5>
+            <p>Bringing out the beauty in you with style and science.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Products</a></li>
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <p class="text-center text-white mb-0">
+          © 2025 Lakmé Beauty. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
